@@ -1,21 +1,22 @@
 ---
 layout:     post
-title:      理解data model & data structure：I models
+title:      data model & data structure：I models
 subtitle:   DDIA: Designing Data-Intensive Applications
 date:       2018-09-08
-author:     BY
+author:     VickeeX
 header-img: img/post-bg-ios9-web.jpg
 catalog: true
 tags:
-    - iOS
-    - iOS开发基础
+    - DDIA
+    - data models
+    - data structures
 ---
 
 
 刚看完DDIA (Designing Data-Intensive Applications)第一部分，介绍了data system的基础，如：三大原则，基本/常见的数据模型 (models)，数据存储结构 (structures)。虽然暂时没有具体到很多细节或实例（后续），但也是理清了一些思路，不同于以前了解一个系统时看到一些名词的懵逼或混乱了。
 
 我比较喜欢理清一些关键词的定义，再按树的结构往下走，文章组织形式以我所注重的点来吧~
-*****
+
 # Definition
 先弄清楚几个我之前有点混乱的概念，便于之后对数据系统进行学习。
 **Storage engine**:数据系统内部用来进行数据增删改查的组件。
