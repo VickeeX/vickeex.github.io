@@ -1,17 +1,17 @@
 ---
 layout:     post
-title:      iOS 手势与变形
-subtitle:   手势与变形基础知识笔记
+title:      Data Models And Data Structures
+subtitle:   Designing Data-Intensive Applications
 date:       2018-10-15
-author:     BY
+author:     VickeeX
 header-img: img/post-bg-ios9-web.jpg
 catalog: true
 tags:
-    - iOS
-    - iOS开发基础
+    - DDIA
+    - data models
+    - data structures
 ---
 
->手势在用户交互中有着举足轻重的作用，这篇文字简单的介绍了iOS中的手势，并通过手势对控件进行变形处理。
 
 # 手势
 
