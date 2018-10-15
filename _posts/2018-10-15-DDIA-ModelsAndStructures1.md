@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      Data Models And Data Structures: Models
+title:      Data Models And Data Structures
 subtitle:   Designing Data-Intensive Applications
 date:       2018-10-15
 author:     VickeeX
