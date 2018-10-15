@@ -1,9 +1,9 @@
 # Site settings
-title: VX Blog
+title: VickeeX Blog
 SEOTitle: 是魏星苦瓜 | vickeex
 header-img: img/post-bg-desk.jpg
 email: weixing65536@gmail.com
-description: "Every failure is leading towards success."
+description: "徐徐入梦来。"
 keyword: "vickee, vickeex, 是魏星苦瓜, DDIA"
 url: "http://vickeex.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
@@ -102,8 +102,8 @@ friends: [
         title: "WY",
         href: "http://zhengwuyang.com"
     },{
-        title: "简书·BY",
-        href: "http://www.jianshu.com/u/e71990ada2fd"
+        title: "简书·VX",
+        href: "http://www.jianshu.com/u/4fd57dd6aca3"
     },{
         title: "Apple",
         href: "https://apple.com"
