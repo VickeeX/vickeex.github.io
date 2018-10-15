@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      Data Model And Data Structure：I models
+title:      iOS手势与变形
 subtitle:   DDIA: Designing Data-Intensive Applications
 date:       2018-09-08
 author:     VickeeX
@@ -12,6 +12,7 @@ tags:
     - data structures
 ---
 
+Data Model And Data Structure: I models
 
 刚看完DDIA (Designing Data-Intensive Applications)第一部分，介绍了data system的基础，如：三大原则，基本/常见的数据模型 (models)，数据存储结构 (structures)。虽然暂时没有具体到很多细节或实例（后续），但也是理清了一些思路，不同于以前了解一个系统时看到一些名词的懵逼或混乱了。
 
