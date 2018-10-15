@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      data model & data structure：I models
+title:      Data Model And Data Structure：I models
 subtitle:   DDIA: Designing Data-Intensive Applications
 date:       2018-09-08
 author:     VickeeX
