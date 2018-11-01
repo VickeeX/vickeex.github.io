@@ -4,7 +4,7 @@ title:      New For Docker
 subtitle:   Background And Basic Concepts
 date:       2018-10-29
 author:     VickeeX
-header-img: img/post-bg-docker-logo.png
+header-img: img/post-bg-docker-logo-3.png
 catalog: true
 tags:
     - Docker

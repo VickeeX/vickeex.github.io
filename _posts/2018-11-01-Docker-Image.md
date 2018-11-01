@@ -4,7 +4,7 @@ title:      Docker Image
 subtitle:   
 date:       2018-11-01
 author:     VickeeX
-header-img: img/post-bg-docker-logo-1.png
+header-img: img/post-bg-docker-logo-2.png
 catalog: true
 tags:
     - Docker
