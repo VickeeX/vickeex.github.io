@@ -41,6 +41,8 @@ tags:
 | -u | --user string | username or UID |
 | -v | --volume value | 绑定挂载数据卷 |
 | -w | --workdir string | 指定工作路径 |
+
+
 注：本来想对--link选项参数拓展讲一下容器的链接（即容器间存在依赖关系，container A的运行依附于container B的已经运行），然后感觉不会怎么用上，就此吧。
 
 
