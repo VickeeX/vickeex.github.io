@@ -43,6 +43,7 @@ tags:
 | -w | --workdir string | 指定工作路径 |
 注：本来相对--link选项参数拓展讲一下容器的链接（即容器间存在依赖关系，container A的运行依附于container B的已经运行），然后感觉不会怎么用上，就此吧。
 
+
 ### other operations
 
 | command | description | options |
@@ -64,6 +65,7 @@ tags:
 | port | 列出容器的端口映射信息 |  |
 | stats | 显示容器资源使用情况统计信息的实时流数据 | --all, --format |
 | diff | 列出容器文件系统的文件/目录变化 |  |
+
 
 ### network
 在创建container时提供了network的选项参数，网络连接正是容器最重要的配置之一。docker的网络系统可插拔，以网络驱动的形式进行管理，主要有以下几种方式：
