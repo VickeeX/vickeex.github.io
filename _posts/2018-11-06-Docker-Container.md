@@ -76,3 +76,18 @@ tags:
 * none: 哈哈哈不用网络也是一种网络连接的方式。
 * network plugins: 安装并使用第三方网络插件。
 
+
+网络部分的的CLI命令如下，用法都是 "$ docker network COMMAND"。
+
+| command | description |
+| ------ | ------ | 
+| connect | Connect a container to a network |
+| create | Create a network |
+| disconnect | Disconnect a container from a network |
+| inspect | Display detailed information on one or more networks |
+| ls | List networks |
+| prune | Remove all unused networks |
+| rm | Remove one or more networks |
+
+
+
