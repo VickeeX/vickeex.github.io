@@ -43,15 +43,16 @@ Docker自定义了不同存储驱动的使用优先级。首先选择使用较�
 选择合适的storage driver，需要先以所使用的docker版本、操作系统、分布式与否作为依据，另外一些存储驱动要求使用文件系统的特定格式或者额外的配置，此后再根据所需要的工作负载和稳定性进行选择。
 
 ### Data Volumes
-容器可写层的文件读写速度很慢，而且在container退出后即丢失，同时容器外的进程很难获取容器内部文件，可写层也不适合用于大量写操作的应用，故docker还提供了**持久化存储**文件的方式——直接写入主机的文件系统。主要有两种方式，volumes和bind mounts(绑定挂载)，Linux系统还哈哈哈额外赠送了另一种tmpfs mount方式。
+容器可写层的文件读写速度很慢，而且在container退出后即丢失，同时容器外的进程很难获取容器内部文件，可写层也不适合用于大量写操作的应用，故docker还提供了**持久化存储**文件的方式——直接写入主机的文件系统。主要有两种方式，volumes和bind mounts(绑定挂载)。
 * **Volumes**: 存储在docker管理的主机文件系统上（如 /var/lib/docker/volumes），docker外部进程无法更改这些文件 —— 是比较好的数据持久化方式。
 * **Bind mounts**: 可以存储在主机上任何位置，docker containers或外部进程都可以进行更改。
-* **tmpfs mounts**: 写入主机内存(memory)，但不写入文件系统。
+
+另外提一下Linux系统（哈哈哈）额外赠送的一种数据管理方式——**tmpfs mounts**: 写入主机内存(memory)，但不写入文件系统；如果不需要持久化存储，也可以选择用这种方式。
 ![data_volumes.png](https://upload-images.jianshu.io/upload_images/13962746-78792a0570b17c20.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ##### volumes
 Volumes是由docker进行管理的，和主机文件系统隔离开了。多个containers可以共同使用一个volume，要注意volume的存在是不依附于container的。
-在创建container或者使用service时可通过选项参数进行volumes创建，也可单独使用docker volume create命令。如下，第一条命令创建了一个名为memeda的volume，第二条命令则运行容器时在memeda下又创建了一个/hh文件夹：
+在创建container或者使用service时可通过选项参数（-v / --volume / --mount）进行volumes创建，也可单独使用docker volume create命令。如下，第一条命令创建了一个名为memeda的volume，第二条命令则运行容器时在memeda下又创建了一个/hh文件夹：
 ```
 $ docker volume creat memeda
 $ docker run -d -v memeda:/hh busybox ls/hh
@@ -67,7 +68,13 @@ volume通过名字区分，container之间共用volume的时候不要弄混了�
 
 
 ##### Bind mounts
+姑且让它的中文名叫做“绑定挂载卷”吧，功能有限，请谨慎使用。Bind mounts的文件/目录放在主机文件系统中，无法直接用docker CLI进行管理。当一个bind mount挂载到一个container时，按需使用时进行创建。
+本来这里应该是对bind mounts的详细使用说明，但感觉无需多说，为什么？因为相比bind mounts，volumes有以下优点：
+* volumes更便于打包或迁移；
+* volumes可以直接通过docker提供的CLI命令或API进行管理；
+* volumes在Linux和Windows上都能工作~~；
+* 使用volume drivers还可以在远程主机或云平台上存储数据卷、加密或进行其他功能操作。
 
-
+所以啊，多了解下volumes吧，以后有需求用到了绑定挂载，我再来更新。
 
 
