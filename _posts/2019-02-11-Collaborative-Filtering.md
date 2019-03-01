@@ -4,7 +4,7 @@ title:      推荐算法：协作型过滤
 subtitle:   
 date:       2019-02-11
 author:     VickeeX
-header-img: img/post-bg-collective-intelligence.jpeg
+header-img: img/post-bg-collective-intelligence-n.jpeg
 catalog: true
 tags:
     - Recommendations
