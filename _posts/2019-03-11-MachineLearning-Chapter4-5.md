@@ -25,9 +25,14 @@ tags:
 
 * **信息增益(information gain)**
 信息熵(information entropy)是度量样本集合纯度的常用指标.
+
 $ Ent(D) = - \sum^{|y|}_{k=1}p_klog_2p_k $
+
 $ Gain(D,a) = Ent(D) - \sum^v_{v=1}\frac{|D^v|}{|D|}Ent(D^v) $
-算法line 8th选择属性 $ a^* = arg\ max\ Gain(D,a) $.
+
+算法line 8th选择属性
+ 
+ $ a^* = arg\ max\ Gain(D,a) $.
 信息增益对可取值数目较多的属性有所偏好.
 
 * **增益率(gain ratio)**
