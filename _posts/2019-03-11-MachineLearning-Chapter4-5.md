@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      Machine learning Chapter4/5
-subtitle:   
+title:      Machine Learning Chapter4/5
+subtitle:   决策树 神经网络
 date:       2019-03-11
 author:     VickeeX
 header-img: img/post-bg-casual-0.jpeg
