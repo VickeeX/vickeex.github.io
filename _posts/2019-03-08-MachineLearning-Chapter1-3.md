@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      Machine learning: Chapter1/2/3
+title:      Machine learning Chapter1/2/3
 subtitle:   
 date:       2019-03-08
 author:     VickeeX
