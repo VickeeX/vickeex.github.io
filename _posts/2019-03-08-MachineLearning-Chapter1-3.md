@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      Machine learning Chapter1/2/3
-subtitle:   
+title:      Machine Learning Chapter1/2/3
+subtitle:   绪论 模型评估与选择 线性模型
 date:       2019-03-08
 author:     VickeeX
 header-img: img/post-bg-casual-0.jpeg
