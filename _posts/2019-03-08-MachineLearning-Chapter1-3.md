@@ -112,6 +112,7 @@ mean squared error, 均方误差: 回归任务中的常用性能度量, 表示�
 #### 查准率(precision)、查全率(recall)与F1
 查准率 P=TP/(TP+FP); 查全率 R=TP/(TP+FN)
 两者是矛盾的度量.
+
 | 真相/预测结果 | 正例 | 反例 |
 | ------ | ------ | ------ |
 | 正例 | TP(真正例, true positive) | FN(假反例, false negative) |
